@@ -1,9 +1,14 @@
 import React from "react";
+import BigLandingTitle from "../components/landing/bigLandingTitle/bigLandingTitle";
+import Tool from "../components/tool/tool";
 
 const Home = () => {
     return (
         <>
-            home
+            <BigLandingTitle>
+                Social Post Converter
+            </BigLandingTitle>
+            <Tool/>
         </>
     );
 };
