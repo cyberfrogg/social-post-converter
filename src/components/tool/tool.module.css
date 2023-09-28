@@ -3,3 +3,11 @@
     max-width: 800px;
     margin: 0 auto;
 }
+
+.buttonsContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 20px;
+}

@@ -11,6 +11,7 @@
     "@types/node": "^16.18.52",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "dom-to-image": "^2.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.2",
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@types/dom-to-image": "^2.6.5",
     "eslint": "^8.49.0"
   }
 }

@@ -2,6 +2,7 @@
   --color-primary: #191b22;
   --color-secondary: #282c37;
   --color-accent: #6364ff;
+  --color-accent-white: #eaeaff;
 
   --color-text-primary: #9baec8;
 }
@@ -11,7 +12,7 @@
   padding: 0;
   font-size: 18px;
   color: var(--color-text-primary);
-  font-family: "Roboto Light", Arial, "Noto Sans";
+  font-family: "Roboto Light", Arial, "Noto Sans", sans-serif;
 }
 
 body{

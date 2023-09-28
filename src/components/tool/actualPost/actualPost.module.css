@@ -14,3 +14,6 @@
     letter-spacing: 1px;
     resize: none
 }
+.textarea::placeholder{
+    color: var(--color-text-primary);
+}

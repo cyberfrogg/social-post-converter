@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    min-height: 100px;
+    background: rgb(37,44,78);
+    background: linear-gradient(148deg, rgba(37,44,78,1) 0%, rgba(18,22,41,1) 100%);
+}
+
+.profile{
+    height: 40px;
+    width: calc(100% - 10px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 20px;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.profile p{
+    margin-left: 10px;
+    color: white;
+}
