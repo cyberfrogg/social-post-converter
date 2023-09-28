@@ -15,6 +15,14 @@ const SimplePostDummy = (props: SimplePostDummyProps) => {
                 <img src={props.avatarBase64} alt={"Avatar image"} />
                 <p>{props.nickname}</p>
             </div>
+            <div className={classes.textContent}>
+                <p>
+                    {props.title}
+                </p>
+                <p>
+                    {props.textContent}
+                </p>
+            </div>
         </div>
     );
 };
