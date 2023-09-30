@@ -1,6 +1,5 @@
 .container{
     width: 100%;
-    margin: 0 auto;
     max-width: 500px;
     min-height: 100px;
     background: rgb(37,44,78);
@@ -9,7 +8,7 @@
 
 .profile{
     height: 40px;
-    width: calc(100% - 10px);
+    width: calc(100% - 40px);
     display: flex;
     justify-content: flex-start;
     align-items: center;

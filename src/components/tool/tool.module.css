@@ -11,3 +11,8 @@
     grid-gap: 30px;
     margin-bottom: 20px;
 }
+
+.renderContainer{
+    display: flex;
+    justify-content: center;
+}

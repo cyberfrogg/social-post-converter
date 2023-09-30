@@ -5,14 +5,18 @@ export interface ToolState {
     title: string,
     textContent: string,
     nickname: string,
-    avatarBase64: string
+    avatarBase64: string,
+    resultImageBase64: string
+    isResultShown: boolean,
 }
 
 const initialState: ToolState = {
     title: "",
     textContent: "",
     nickname: "",
-    avatarBase64: "data:image/avif;base64,AAAAFGZ0eXBhdmQAAAAAAAQAAAB5pbG9jAAA"
+    avatarBase64: "data:image/avif;base64,AAAAFGZ0eXBhdmQAAAAAAAQAAAB5pbG9jAAA",
+    resultImageBase64: "data:image/avif;base64,AAAAFGZ0eXBhdmQAAAAAAAQAAAB5pbG9jAAA",
+    isResultShown: false,
 };
 
 export const toolSlice = createSlice({
@@ -31,10 +35,16 @@ export const toolSlice = createSlice({
         setAvatarBase64: (state: Draft<ToolState>, action: PayloadAction<string>) => {
             state.avatarBase64 = action.payload;
         },
+        showResult: (state: Draft<ToolState>, action: PayloadAction<string>) => {
+            state.isResultShown = true;
+            state.resultImageBase64 = action.payload;
+        },
+        hideResult: (state: Draft<ToolState>) => {
+            state.isResultShown = false;
+        },
     },
 });
 
-// Action creators are generated for each case reducer function
-export const { setTitle, setTextContent, setNickname, setAvatarBase64 } = toolSlice.actions;
+export const { setTitle, setTextContent, setNickname, setAvatarBase64, showResult, hideResult } = toolSlice.actions;
 
 export default toolSlice.reducer;
